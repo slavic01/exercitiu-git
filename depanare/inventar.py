@@ -16,7 +16,7 @@ def port_valid(text):
     try:
         return int(text)
     except ValueError:
-    	return None
+        return None
 
 
 def pe_servicii(tinte):
@@ -40,8 +40,8 @@ def peste_prag(tinte, prag):
         port = port_valid(t["port"])
         if port is None:
             continue
-	if port > prag:
-            rezultat.append(t[¨gazda¨])
+        if port > prag:
+            rezultat.append(t["gazda"])
     return rezultat
 
 
